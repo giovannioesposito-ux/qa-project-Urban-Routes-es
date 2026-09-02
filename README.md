@@ -10,9 +10,15 @@ Proyecto de automatización de pruebas web end-to-end desarrollado en Python con
 El código define la clase de página 'UrbanRoutesPage', encargada de mapear los elementos de la interfaz de usuario (localizadores) y encapsular las interacciones necesarias para llevar a cabo el flujo de reserva.
 
 ## Formato del proyecto
-**data**: contiene todos los datos y rutas necesarios para las prueba. Las rutas deben ser actualizadas antes de realizar las pruebas
+**data.py**: contiene todos los datos y rutas necesarios para las prueba. Las rutas deben ser actualizadas antes de realizar las pruebas
 
-**main**: contiene las clases, localizadores, métodos, pasos y funciones de las pruebas.
+**main.py**: contiene las pruebas automatizadas.
+
+**pages.py**: contiene todas las clases, localizadores, metodos, funciones y pasos para ejecutar las pruebas.
+
+**helper.py**: contiene el código que recupera el número de confirmación de teléfono y lo devuelve como un string.
+
+**requirements.txt** archivo de texto que contiene las dependencias del proyectos con sus versiones para facilitar su instalación.
 
 ##  Tecnologías y Técnicas Usadas
 
@@ -52,9 +58,10 @@ cd qa-project-Urban-Routes-es
 ```
 
 * Tener instalado Python 3.x.
+
 * Disponer de las dependencias instaladas en tu entorno virtual o local:
  ```bash  
-pip install selenium
+pip install -r requirements.txt
 ```
 
 * Configurar la URL del servidor:    
